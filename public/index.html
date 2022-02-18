@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Express Node Form Validation</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark bg-secondary mb-5">
+            <a class="navbar-brand mx-auto my-4" href="#">Form Validation</a>
+        </nav>
+
+        <div class="container w-50">
+            <div class="alert alert-success d-none" role="alert">
+                Form submitted successfully!!!
+            </div>
+            <div class="col-md-12">
+                <form class="form-submit">
+                    <div class="form-group my-3">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" id="name" />
+                        <p class="error text-danger"></p>
+                    </div>
+                    <div class="form-group my-3">
+                        <label>Email</label>
+                        <input type="text" class="form-control" name="email" id="email" />
+                        <p class="error text-danger"></p>
+                    </div>
+                    <div class="form-group my-3">
+                        <label>Phone Number</label>
+                        <input type="text" class="form-control" name="phone" id="phone"/>
+                        <p class="error text-danger"></p>
+                    </div>
+                    <div class="form-group my-3">
+                        <label class="form-label d-block">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="maleGender" value="Male">
+                            <label for="maleGender">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="Female">
+                            <label for="femaleGender">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="othersGender" value="Others">
+                            <label for="othersGender">Others</label>
+                        </div>
+                        <p class="error text-danger"></p>
+                    </div>
+                    <div class="form-group my-3 hobbies-group">
+                        <label for="" class="form-label d-block">Hobbies</label>
+                        <div class="form-check">
+                            <input type="checkbox" name="hobbies" id="reading" class="form-check-input" value="reading">
+                            <label for="reading">Reading</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="hobbies" id="traveling" class="form-check-input" value="traveling">
+                            <label for="traveling">Traveling</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="hobbies" id="music" class="form-check-input" value="music">
+                            <label for="music">Listening to music</label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <label for="others" class="me-3">Others</label>
+                            <input type="text" name="" id="others" class="form-control d-inline-block w-25">
+                        </div>
+                        <p class="error text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-danger btn-block">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="./js/axios.min.js"></script>
+        <script src="js/browser_app.js"></script>
+    </body>
+
+</html>
